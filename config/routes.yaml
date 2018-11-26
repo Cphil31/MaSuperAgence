@@ -2,6 +2,6 @@ index:
    path: /
    controller: App\Controller\HomeController::index
 
-property:
-   path: /property
-   controller: App\Controller\PropertyController::index
+acheter:
+   path: /acheter
+   controller: App\Controller\ProductController::index

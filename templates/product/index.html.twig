@@ -7,8 +7,13 @@
 
     <div class="container">
         <h1>Ma Super agence</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, nostrum corporis! Obcaecati expedita praesentium sint sunt excepturi ab sed non officia alias at iste impedit, asperiores consequatur minus aliquam dicta.</p>
     </div>
 </div>
+<h1>Produits</h1>
+
+{% for product in products %}
+    <li>{{product.name}}</li>
+    <li>{{product.price}}</li>
+{% endfor %}
 
 {% endblock %}

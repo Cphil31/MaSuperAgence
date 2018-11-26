@@ -11,9 +11,6 @@ class HomeController extends AbstractController
     {
         return $this->render('index.html.twig');
     }
-    public function formations()
-    {
-        return $this->render('formations.html.twig');
-    }
+    
     
 }
