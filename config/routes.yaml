@@ -5,3 +5,7 @@ index:
 acheter:
    path: /acheter
    controller: App\Controller\ProductController::index
+
+add:
+   path: /add
+   controller: App\Controller\ProductController::add

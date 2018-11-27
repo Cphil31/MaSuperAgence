@@ -11,15 +11,14 @@ class ProductController extends AbstractController
     /**
      * @Route("/product", name="product")
      */
-    public function index()
-    {
+    public function index(){
+      
         $repository = $this->getDoctrine()->getRepository(Product::class);
 
         $products = $repository->findAll();
 
         return $this->render('/product/index.html.twig',['products' => $products] );
-     }
+     }  
+ }
 
     
-   
-}

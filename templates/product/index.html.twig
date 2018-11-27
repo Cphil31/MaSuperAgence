@@ -9,11 +9,18 @@
         <h1>Ma Super agence</h1>
     </div>
 </div>
-<h1>Produits</h1>
+<div class="blockcard">
 
-{% for product in products %}
-    <li>{{product.name}}</li>
-    <li>{{product.price}}</li>
-{% endfor %}
+    {% for product in products %}  
+    
+    <div class="carte">
+        <div> Nom : {{product.name}}</div>
+        <div> Prix : {{product.price}}</div>
+        <div>Description : {{product.description}}</div>  
+    </div>
+    
+    {% endfor %}
+</div>
 
+    
 {% endblock %}
