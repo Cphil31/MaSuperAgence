@@ -1,26 +1,26 @@
 <?php
 
 namespace App\Controller;
-
 use App\Entity\Product;
+use App\Entity\Category;
+
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ProductController extends AbstractController
+class LouerController extends AbstractController
 {
     /**
-     * @Route("/product", name="product")
+     * @Route("/louer", name="louer")
      */
-    public function index(){
-      
+    public function index()
+    {
         $repository = $this->getDoctrine()->getRepository(Product::class);
 
         $products = $repository->findBy(
-            ['category' => '1']
+            ['category' => '2']
         );
 
-        return $this->render('/product/index.html.twig',['products' => $products] );
-     }  
- }
+        return $this->render('/louer/index.html.twig',['products' => $products] );
 
-    
+    }
+}

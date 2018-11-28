@@ -7,5 +7,9 @@ acheter:
    controller: App\Controller\ProductController::index
 
 add:
-   path: /add
-   controller: App\Controller\ProductController::add
+   path: /category
+   controller: App\Controller\CategoryController::index
+
+louer:
+   path: /louer
+   controller: App\Controller\LouerController::index
