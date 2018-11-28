@@ -31,10 +31,12 @@ class Product
      */
     private $description;
 
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $adress;
+
+    
 
     public function getName(): ?string
     {
@@ -71,4 +73,17 @@ class Product
 
         return $this;
     }
+
+    public function getLieu(): ?string
+    {
+        return $this->lieu;
+    }
+
+    public function setLieu(string $lieu): self
+    {
+        $this->lieu = $lieu;
+
+        return $this;
+    }
+
 }
