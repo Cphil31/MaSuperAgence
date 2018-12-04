@@ -18,8 +18,9 @@ user_registration:
    path: /register
    controller: App\Controller\RegistrationController::register
 
-
 app_login:
    path: /login
    controller: App\Controller\SecurityController::login
 
+app_logout:
+    path: /logout
