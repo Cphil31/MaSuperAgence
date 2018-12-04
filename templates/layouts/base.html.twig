@@ -36,11 +36,17 @@
                                 <a class="nav-link" href="https://symfony.com/doc/current/index.html#gsc.tab=0" target="_blank">Documentation <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item ">
-                                    <a class="nav-link" href="/register" target="_blank">Sign <span class="sr-only">(current)</span></a>
+                                    <a class="nav-link" href="/register" target="_blank">s'enregistrer <span class="sr-only">(current)</span></a>
                             </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="/login" target="_blank">Login <span class="sr-only">(current)</span></a>
-                        </li>
+                            {% if not app.user %}
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="/login" target="_blank">connexion <span class="sr-only">(current)</span></a>
+                                </li>
+                            {% else %}
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="/logout" target="_blank">déconnexion <span class="sr-only">(current)</span></a>
+                                </li>
+                            {% endif %}
                     </ul>
                      
                     </div>
